@@ -1,0 +1,72 @@
+/*colors:
+value text #1d6089
+label text: #526b7e
+card border: #dce7ef sky blue
+*/
+
+/* weather data container */
+.container {
+    width: 100%;
+    max-width: 520px;
+    margin: 1.5rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* large temperature card */
+.temperature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border: 1px solid #dce7ef;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(36, 85, 120, 0.08);
+}
+
+/* additional metrics container */
+.info {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+/* 4 small cards for weather metrics */
+.item {
+    min-width: 0;
+    min-height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem 0.75rem;
+    background-color: #ffffff;
+    border: 1px solid #dce7ef;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(36, 85, 120, 0.06);
+    text-align: center;
+}
+
+/* label styling (shared) */
+.label {
+    color: #526b7e;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+/* value styling (shared) */
+.value {
+    color: #1d6089;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.temperature .value {
+    font-size: 2.5rem;
+}
